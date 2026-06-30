@@ -22,6 +22,7 @@ Parameters:
 Resources:
   MyVPC:
     Type: AWS::EC2::VPC
+    DeletionPolicy: Retain
     Properties:
       CidrBlock: !Ref VpcCidrBlock
       EnableDnsSupport: true
@@ -32,6 +33,7 @@ Resources:
 
   MySubnet:
     Type: AWS::EC2::Subnet
+    DeletionPolicy: Retain
     Properties:
       VpcId: !Ref MyVPC
       CidrBlock: !Ref SubnetCidrBlock
@@ -42,6 +44,7 @@ Resources:
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
+    DeletionPolicy: Retain
     Properties:
       GroupDescription: Allow SSH access
       VpcId: !Ref MyVPC
