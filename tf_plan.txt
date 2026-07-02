@@ -1,0 +1,8 @@
+aws_vpc.my_vpc: Refreshing state... [id=vpc-02db9b9605153b430]
+aws_subnet.my_subnet: Refreshing state... [id=subnet-0aea34b46b90565e0]
+aws_security_group.my_security_group: Refreshing state... [id=sg-0e0691a107d90afb6]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
