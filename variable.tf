@@ -21,3 +21,9 @@ variable "allowed_ssh_location" {
   type        = string
   default     = "0.0.0.0/0"
 }
+
+variable "aws_region" {
+  description = "AWS Region"
+  type = string
+  default = "ap-south-1"
+}
